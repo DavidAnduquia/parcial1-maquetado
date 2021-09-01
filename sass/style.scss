@@ -15,6 +15,8 @@ $svg-hg: 20vh;
    height: 100vh;
    a{
      color: white;
+     font-family: 'EB Garamond', serif;
+     font-size: 1rem;
    }
 
    svg{
@@ -85,18 +87,19 @@ $svg-hg: 20vh;
 
       #progress_reproductor{
       flex-direction: column;
-  
-    
+       align-items: center;
+     
+        background-color: rgb(17,17,17);
     #rng_reproductor{
+      height: 20px;
     
-      background-color: rgb(100, 45, 45);
       display: flex;
       align-content: center;
       justify-content: center;
       }
 
     #txt_reproductor{   
-      background-color: rgb(100, 45, 45);
+ 
       flex-direction: column;
       div{
         display: flex; 
@@ -148,7 +151,16 @@ $svg-hg: 20vh;
       justify-content: center;
     }
   }
- }
+
+
+
+  #progress_reproductor{
+    flex-direction: column;
+    background-color: rgb(17,17,17);
+    height: 1px;
+  }
+
+  }
 
  @media only screen and (min-width: 426px) {
    
