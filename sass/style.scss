@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+$svg-hg: 20vh;
+ 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ 
+ .container {
+   background-color: rgb(2, 2, 2);
+   display: grid;
+   height: 100vh;
+   a{
+     color: white;
+   }
+
+   svg{
+    fill:white;
+    width: 7vw;
+    height: 30px;
+  }
+ }
+
+      #header{
+   
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding : 4.5vh;
+      }
+
+      #content{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 65%; 
+        }
+        
+      }
+
+      #progress_reproductor{
+        background-color: black;
+      }
+
+
+      #footer {
+        background-color: rgb(17,17,17);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        #plus-play{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .btn-play{
+            padding: 20px;
+            svg{
+               width: 45px;
+              }
+           }
+        }
+
+
+        #option-play{
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+       
+    
+          .btn-opcion{
+            padding: 18px;
+            svg{
+            width: 1.5vw;
+            }
+          }
+        }
+   
+      }
+
+
+      #progress_reproductor{
+      flex-direction: column;
+  
+    
+    #rng_reproductor{
+    
+      background-color: rgb(100, 45, 45);
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      }
+
+    #txt_reproductor{   
+      background-color: rgb(100, 45, 45);
+      flex-direction: column;
+      div{
+        display: flex; 
+        align-content: flex-end;
+        justify-content: center;  
+        label{
+          font-family: 'EB Garamond', serif;
+          font-size: 1rem;
+        }
+      }
+    }
+      }
+
+
+ @media screen and (max-width: 375px) {
+  #content{
+    background-color: rosybrown;
+    height: $svg-hg;
+      img{
+        width: 100%;
+ 
+      }
+  }
+
+
+  #footer{
+    display: grid;
+    grid-template-columns: 100%;
+ 
+    #option-play{
+      order: 2;
+      
+      align-items:center;
+      justify-content: center;
+      
+
+      .btn-opcion{
+        padding: 25px;
+        svg{
+        width: 4vw;
+        }
+      }
+      
+    }
+
+    #plus-play{
+      order: 1;
+      align-items:flex-end;
+      justify-content: center;
+    }
+  }
+ }
+
+ @media only screen and (min-width: 426px) {
+   
+}
+
+
+
+
+#range_progreso{
+  width: 50%;
+}
+
+#range_volumen{
+  width: 7vw;
+}
+
+input[type="range"]{
+  height: 6px;
+  width: 8%;
+}
+
+svg:hover{ 
+  fill: rgb(230, 69, 69);
+  border-radius: 60% rgb(20,20,20);
+}

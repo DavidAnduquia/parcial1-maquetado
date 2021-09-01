@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #020202;
+  display: grid;
+  height: 100vh;
+}
+.container a {
+  color: white;
+}
+.container svg {
+  fill: white;
+  width: 7vw;
+  height: 30px;
+}
+
+#header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.5vh;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content img {
+  width: 65%;
+}
+
+#progress_reproductor {
+  background-color: black;
+}
+
+#footer {
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#footer #plus-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer #plus-play .btn-play {
+  padding: 20px;
+}
+#footer #plus-play .btn-play svg {
+  width: 45px;
+}
+#footer #option-play {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#footer #option-play .btn-opcion {
+  padding: 18px;
+}
+#footer #option-play .btn-opcion svg {
+  width: 1.5vw;
+}
+
+#progress_reproductor {
+  flex-direction: column;
+}
+#progress_reproductor #rng_reproductor {
+  background-color: #642d2d;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#progress_reproductor #txt_reproductor {
+  background-color: #642d2d;
+  flex-direction: column;
+}
+#progress_reproductor #txt_reproductor div {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+#progress_reproductor #txt_reproductor div label {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  #content {
+    background-color: rosybrown;
+    height: 20vh;
+  }
+  #content img {
+    width: 100%;
+  }
+
+  #footer {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  #footer #option-play {
+    order: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer #option-play .btn-opcion {
+    padding: 25px;
+  }
+  #footer #option-play .btn-opcion svg {
+    width: 4vw;
+  }
+  #footer #plus-play {
+    order: 1;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+#range_progreso {
+  width: 50%;
+}
+
+#range_volumen {
+  width: 7vw;
+}
+
+input[type=range] {
+  height: 6px;
+  width: 8%;
+}
+
+svg:hover {
+  fill: #e64545;
+  border-radius: 60% #141414;
+}
+
+/*# sourceMappingURL=style.css.map */
